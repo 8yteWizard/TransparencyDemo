@@ -47,11 +47,7 @@ type
     procedure ApplyDwmBlur;
     procedure ApplyMagnifier;
     procedure ApplySmoothAcrylic;
-
-    // Smooth Acrylic helper
     procedure SetSWCAAccent(hWnd: HWND; State: Integer);
-
-    // Subclass WndProc for smooth acrylic
     function SmoothAcrylicWndProc(hWnd: HWND; Msg: UINT; wParam: WPARAM; lParam: LPARAM): LRESULT; stdcall;
   public
   end;
@@ -394,7 +390,7 @@ begin
 end;
 
 /////////////////////////////////////////////////////////
-// Smooth Acrylic
+
 procedure TForm1.SetSWCAAccent(hWnd: HWND; State: Integer);
 var
   User32: HMODULE;
