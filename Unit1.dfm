@@ -14,20 +14,30 @@ object Form1: TForm1
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   TextHeight = 15
-  object Label1: TLabel
-    Left = 24
-    Top = 24
-    Width = 151
-    Height = 15
-    Caption = 'Select Transparency Method:'
-  end
-  object ComboBox1: TComboBox
-    Left = 24
-    Top = 48
-    Width = 350
-    Height = 23
-    Style = csDropDownList
+  object Panel1: TPanel
+    Left = -8
+    Top = -7
+    Width = 505
+    Height = 312
+    ParentBackground = False
     TabOrder = 0
-    OnChange = ComboBox1Change
+    object Label1: TLabel
+      Left = 24
+      Top = 24
+      Width = 151
+      Height = 15
+      Caption = 'Select Transparency Method:'
+      Color = clBlack
+      ParentColor = False
+    end
+    object ComboBox1: TComboBox
+      Left = 24
+      Top = 48
+      Width = 350
+      Height = 23
+      Style = csDropDownList
+      TabOrder = 0
+      OnChange = ComboBox1Change
+    end
   end
 end
