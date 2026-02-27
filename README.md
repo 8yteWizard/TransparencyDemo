@@ -6,7 +6,7 @@ This project showcases several distinct methods to apply window transparency and
 
 ---
 
-![](/TransparencyDemo.gif)
+![](/Demo.gif)
 
 ## Overview
 
